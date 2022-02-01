@@ -9,6 +9,7 @@ import java.util.List;
 
 @Repository
 public interface AppointmentRepository extends CrudRepository<Appointment, String> {
-    List<Appointment> findByPractitionerId(String practitionerId);
+    List<Appointment> findByPractitionerId(int practitionerId);
     List<Appointment> findAll();
+                        
 }
